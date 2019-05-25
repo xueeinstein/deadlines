@@ -120,8 +120,18 @@ DeadlinesDesklet.prototype = {
   },
 
   refresh: function() {
+    this.clear();
     this._parseDeadlines();
     this.display();
+  },
+
+  clear: function() {
+    var i;
+    for (i = 0; i < this.deadlineLst.length; i++) {
+      if (i >= this.listLength) break;
+      this.count_down_lst[i].text = "";
+      this.task_lst[i].text = "";
+    }
   },
 
   on_desklet_removed: function() {

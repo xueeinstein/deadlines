@@ -47,7 +47,7 @@
     "type": "textview",
     "default": "",
     "height": 5,
-    "description": "Deadlines list",
-    "tooltip": "Set deadlines in format '2019-12-12 14:00,finish homework;2019-12-13 13:00,submit thesis'"
+    "description": "Deadlines list (in format 2019-5-26 12:00, task1; 2019-5-28 8:00, task2)",
+    "tooltip": "Set deadlines"
   }
 }
