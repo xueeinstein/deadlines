@@ -1,0 +1,6 @@
+{
+  "uuid": "deadlines@shadowthink",
+  "name": "Deadlines desklet",
+  "description": "A list of count-down for deadlines",
+  "prevent-decorations": true
+}
