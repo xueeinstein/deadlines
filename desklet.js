@@ -140,7 +140,10 @@ DeadlinesDesklet.prototype = {
 
   refreshLoop: function() {
     this.refresh();
-    this.timeout = MainLoop.timeout_add_seconds(60, Lang.bind(this, this.refreshLoop));
+    var now = new Date();
+    this.timeout = MainLoop.timeout_add_seconds(
+      60 - parseInt(now % (60 * 1000) / 1000),
+      Lang.bind(this, this.refreshLoop));
   },
 
 };
